@@ -1,0 +1,60 @@
+1:"$Sreact.fragment"
+2:I[3719,["161","static/chunks/161-26b68443731f0363.js","874","static/chunks/874-196dbf0660d69360.js","560","static/chunks/560-dc25b2d8b8d763b3.js","177","static/chunks/app/layout-a77a7acf89fe9b5d.js"],"ThemeProvider"]
+3:I[768,["161","static/chunks/161-26b68443731f0363.js","874","static/chunks/874-196dbf0660d69360.js","560","static/chunks/560-dc25b2d8b8d763b3.js","177","static/chunks/app/layout-a77a7acf89fe9b5d.js"],"default"]
+4:I[7555,[],""]
+5:I[1295,[],""]
+6:I[2548,["161","static/chunks/161-26b68443731f0363.js","874","static/chunks/874-196dbf0660d69360.js","560","static/chunks/560-dc25b2d8b8d763b3.js","177","static/chunks/app/layout-a77a7acf89fe9b5d.js"],"default"]
+8:I[9665,[],"MetadataBoundary"]
+a:I[9665,[],"OutletBoundary"]
+d:I[4911,[],"AsyncMetadataOutlet"]
+f:I[9665,[],"ViewportBoundary"]
+11:I[6614,[],""]
+:HL["/_next/static/css/10be8fe6697fffe3.css","style"]
+0:{"P":null,"b":"0_G1n_Y8LVvo6s7UsbiNQ","p":"","c":["","cv",""],"i":false,"f":[[["",{"children":[["slug","cv","d"],{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/10be8fe6697fffe3.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","link",null,{"rel":"dns-prefetch","href":"https://google-fonts.jialeliu.com"}],["$","link",null,{"rel":"preconnect","href":"https://google-fonts.jialeliu.com","crossOrigin":""}],["$","link",null,{"rel":"preload","as":"style","href":"https://google-fonts.jialeliu.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap"}],["$","link",null,{"rel":"stylesheet","id":"gfonts-css","href":"https://google-fonts.jialeliu.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap","media":"print"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function(){\n                var l = document.getElementById('gfonts-css');\n                if (!l) return;\n                if (l.media !== 'all') {\n                  l.addEventListener('load', function(){ try { l.media = 'all'; } catch(e){} });\n                }\n              })();\n            "}}],["$","noscript",null,{"children":["$","link",null,{"rel":"stylesheet","href":"https://google-fonts.jialeliu.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap"}]}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              try {\n                const theme = localStorage.getItem('theme-storage');\n                const parsed = theme ? JSON.parse(theme) : null;\n                const setting = parsed?.state?.theme || 'system';\n                const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;\n                const effective = setting === 'dark' ? 'dark' : (setting === 'light' ? 'light' : (prefersDark ? 'dark' : 'light'));\n                var root = document.documentElement;\n                root.classList.add(effective);\n                root.setAttribute('data-theme', effective);\n              } catch (e) {\n                var root = document.documentElement;\n                root.classList.add('light');\n                root.setAttribute('data-theme', 'light');\n              }\n            "}}]]}],["$","body",null,{"className":"font-sans antialiased","children":["$","$L2",null,{"children":[["$","$L3",null,{"items":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Publications","type":"page","target":"publications","href":"/publications"},{"title":"CV","type":"page","target":"cv","href":"/cv"}],"siteTitle":"Zihan You","enableOnePageMode":true}],["$","main",null,{"className":"min-h-screen pt-16 lg:pt-20","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$L6",null,{"lastUpdated":"March 18, 2026"}]]}]}]]}]]}],{"children":[["slug","cv","d"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7",["$","$L8",null,{"children":"$L9"}],null,["$","$La",null,{"children":["$Lb","$Lc",["$","$Ld",null,{"promise":"$@e"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","pOO_0AhkYCpvqgYarYCLw",{"children":[["$","$Lf",null,{"children":"$L10"}],null]}],null]}],false]],"m":"$undefined","G":["$11","$undefined"],"s":false,"S":true}
+12:"$Sreact.suspense"
+13:I[4911,[],"AsyncMetadata"]
+15:I[4059,["161","static/chunks/161-26b68443731f0363.js","12","static/chunks/12-4b59b9520356f054.js","748","static/chunks/748-f775986d3dc7c6d6.js","182","static/chunks/app/%5Bslug%5D/page-27b86db797bbc4a8.js"],"default"]
+9:["$","$12",null,{"fallback":null,"children":["$","$L13",null,{"promise":"$@14"}]}]
+16:Tb20,## Education
+
+
+**SouthEast University**, BSc in Intelligent Perception of Engineering, *Third Grade*
+- Supervisor: Prof. Advisor Yan Wang from AIR Tsinghua University
+## Experience
+
+**Intern**,
+China Automotive Innovation Co.(CAIC), Autonomous Driving Development Department, China
+*2024*
+- Led development of a BEV-based 3D object detection model (**MambaBEV**) and proposed the **TemporalMamba** module, achieving 51.7% NDS / 42.7% mAP on nuScenes while improving global context modeling and large-object detection.
+- Applied deep learning, autonomous driving, and software engineering skills (PyTorch, Python) to reproduce and optimize end-to-end driving algorithms (e.g., UniAD, VAD), upgrade 3D lane detection (BEVLaneDet + BEVDet), and build data processing/visualization tools to improve dataset quality and system performance.
+
+
+
+**Research Intern** , Tsinghua University, Institute for AI industry Research, China
+*Jun. 2025 – present*
+- Focused on scene-adaptive Vision–Language–Action (VLA) modeling for autonomous driving, investigating how Large Language Models can be effectively integrated with world models and planning under dynamic traffic conditions.
+- Proposed SAMoE-VLA, a soft-weighted, scene-adaptive Mixture-of-Experts VLA architecture, addressing the limitations of static token-level MoE routing in LLMs when applied to driving scenarios with highly varying scene complexity.
+- Designed a Conditional Cross-Modal Causal Attention mechanism to unify world state modeling, language reasoning, and action generation within a temporally consistent causal framework.
+- Introduced BEV-conditioned expert routing for planning, enabling adaptive expert weighting and merging based on traffic scene context and interaction complexity.
+- Achieved state-of-the-art results on the nuScenes planning benchmark and LangAuto closed loop benchmark.
+- Extended the core scene-adaptive VLA + MoE paradigm to sparse occupancy–driven representation learning and vehicle–infrastructure cooperative planning, demonstrating the generality and scalability of the proposed approach across multiple autonomous driving settings.
+
+## Skills
+
+- **Programming:** Python, C++, C, MATLAB, LaTeX
+- **Framework and tools:** mmdet, mmdet3d, deepspeed, torch, Docker, Git, OBS
+- **Languages:** English (Native), Chinese (Native)
+
+## Awards & Honors
+
+- **National First Prize** in The 27th China Robot and Artificial Intelligence Competition
+- **National Second Prize** in RoboMaster National Super Competition
+- **Outstanding Paper Award** at the 14th Southeast University Undergraduate Academic Conference (2025)
+- **Excellent creative** works at the Society of Automotive Engineers Annual Conference (SAECCE2024)
+- **Provincial Second Prize** in the Jiangsu Students Mechanical Innovation Design Competition 
+7:["$","div",null,{"className":"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12","children":[false,["$","$L15",null,{"config":{"type":"text","title":"CV","source":"cv.md"},"content":"$16"}],false]}]
+c:null
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+b:null
+14:{"metadata":[["$","title","0",{"children":"CV | Zihan You"}],["$","meta","1",{"name":"author","content":"Zihan You"}],["$","meta","2",{"name":"keywords","content":"Zihan You,PhD,Research,Southeast University"}],["$","meta","3",{"name":"creator","content":"Zihan You"}],["$","meta","4",{"name":"publisher","content":"Zihan You"}],["$","meta","5",{"property":"og:title","content":"Zihan You"}],["$","meta","6",{"property":"og:description","content":"Undergraduate student at the Southeast University."}],["$","meta","7",{"property":"og:site_name","content":"Zihan You's Academic Website"}],["$","meta","8",{"property":"og:locale","content":"en_US"}],["$","meta","9",{"property":"og:type","content":"website"}],["$","meta","10",{"name":"twitter:card","content":"summary"}],["$","meta","11",{"name":"twitter:title","content":"Zihan You"}],["$","meta","12",{"name":"twitter:description","content":"Undergraduate student at the Southeast University."}],["$","link","13",{"rel":"icon","href":"/favicon.svg"}]],"error":null,"digest":"$undefined"}
+e:{"metadata":"$14:metadata","error":null,"digest":"$undefined"}
