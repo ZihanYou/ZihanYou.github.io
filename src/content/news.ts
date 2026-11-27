@@ -17,6 +17,20 @@ export const news: NewsItem[] = [
     visibility: "public",
   },
   {
+    id: "world4scorer",
+    date: "Sep. 2026",
+    sort: "2026-09",
+    text: "World4Scorer, on outcome-grounded world modeling for autonomous driving, was released as a preprint. I am a co-author.",
+    visibility: "public",
+  },
+  {
+    id: "mobilewam",
+    date: "Aug. 2026",
+    sort: "2026-08-06",
+    text: "MobileWAM, on world-action models for mobile manipulation, was released as a preprint. I am a co-author. Code has not been released.",
+    visibility: "public",
+  },
+  {
     id: "icpr-2026",
     date: "Aug. 2026",
     sort: "2026-08",

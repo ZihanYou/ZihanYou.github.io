@@ -56,7 +56,7 @@ function ProjectCard({
   return (
     <article className="project" id={project.id}>
       <div className={project.image && full ? "project-primary" : undefined}>
-        {project.image && full ? (
+        {project.image ? (
           <img
             className="figure"
             src={project.image.src}
