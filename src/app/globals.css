@@ -1,4 +1,10 @@
 @import "tailwindcss";
+@import "@fontsource/inter/latin-400.css";
+@import "@fontsource/inter/latin-500.css";
+@import "@fontsource/inter/latin-600.css";
+@import "@fontsource/crimson-text/latin-400.css";
+@import "@fontsource/crimson-text/latin-600.css";
+@import "@fontsource/crimson-text/latin-700.css";
 
 :root {
   color-scheme: light;
@@ -11,8 +17,8 @@
   --card: #fffcf8;
   --line: #e6dfd4;
   --chip: #f3efe8;
-  --font-sans: var(--font-inter), "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-crimson), "Crimson Text", Georgia, "Songti SC", "Noto Serif CJK SC", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Crimson Text", Georgia, "Songti SC", "Noto Serif CJK SC", serif;
 }
 
 .dark {

@@ -2,22 +2,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { navigation, profile, socialLinks } from "@/lib/content";
 import type { Metadata } from "next";
-import { Crimson_Text, Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const crimson = Crimson_Text({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-  variable: "--font-crimson",
-  display: "swap",
-});
 
 const description =
   "Zihan You is an undergraduate researcher at Southeast University working on multimodal foundation models, agentic AI, embodied intelligence, and real-world AI systems.";
@@ -85,7 +70,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   };
 
   return (
-    <html lang="en" className={`${inter.variable} ${crimson.variable}`} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body>
         <script dangerouslySetInnerHTML={{ __html: themeBoot }} />
         <a className="skip-link" href="#content">
