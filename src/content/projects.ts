@@ -10,16 +10,13 @@ export const projects: ResearchProject[] = [
     roleBadges: ["First Author", "Project Lead"],
     statusLabel: "Released benchmark · arXiv preprint",
     paragraphs: [
-      "Language2Drive is a benchmark for whether a natural-language instruction causally determines the behavior of a driving vision-language-action model. Its paired counterfactual unit (PCU) holds the initial driving scene fixed and changes only the instruction, so a successful drive can be distinguished from actually following both feasible requests.",
-      "Across the six principal CARLA systems, 93.2% of successful individual instruction executions lack a successful counterpart under an alternative feasible instruction in the same scene. That figure is the share of successful one-sided executions, not an overall failure rate of the models.",
+      "Same start, two instructions. Across six main CARLA systems, 93.2% of successful single-instruction runs have no successful run for the other feasible instruction.",
     ],
     highlights: [
-      "Six purpose-built CARLA maps",
-      "Four instruction-following scopes",
-      "Paired counterfactual evaluation",
-      "Closed-loop and open-loop tracks across CARLA, reconstructed scenes, and recorded driving",
-      "Reported CARLA comparison: 64 PCUs and 384 core rollouts per system",
-      "Authors affiliated with 19 institutions",
+      "64 PCUs, 384 rollouts per system",
+      "6 maps, 4 instruction scopes",
+      "Closed loop and open loop",
+      "19 institutions",
     ],
     topics: ["agentic-ai", "embodied-ai"],
     image: {
@@ -29,7 +26,7 @@ export const projects: ResearchProject[] = [
       height: 849,
     },
     footnote:
-      "The reported CARLA comparison is the base single-seed cohort. A larger source inventory spans 128 PCUs and 2,304 potential core executions across three seeds; the paper does not present that inventory as the completed comparison. The code, project page, and current Hugging Face benchmark assets are public. The official versioned dataset, model, and checkpoint release is still marked as in progress.",
+      "93.2% counts successful one-sided runs, not an overall failure rate. The reported comparison is 64 PCUs. Code and current benchmark assets are public; the versioned dataset and checkpoints are not released yet.",
     emphasis: "primary",
     visibility: "public",
   },
@@ -41,16 +38,9 @@ export const projects: ResearchProject[] = [
     roleBadges: ["Co-First Author"],
     statusLabel: "ICLR 2026",
     paragraphs: [
-      "Knowledge Externalization transfers targeted parametric knowledge into modular, learnable memory tokens. The same tokens support reversible unlearning, controllable recovery, and compositional retrieval.",
-      "Dual-Stream Memory fine-tuning optimizes forgetting, recovery, and retention of general capability together. The work also studies gradient interference when several concepts are externalized, and introduces MEXBench to evaluate modular knowledge externalization.",
+      "Takes a chosen fact out of the model weights and stores it in memory tokens, so the model can forget it and have it put back.",
     ],
-    highlights: [
-      "Reversible unlearning and modular knowledge recovery",
-      "Multimodal post-training",
-      "Knowledge disentanglement and compositional memory",
-      "Gradient interference mitigation",
-      "MEXBench",
-    ],
+    highlights: ["Memory tokens", "Dual-Stream fine-tuning", "Gradient interference", "MEXBench"],
     topics: ["foundation-models"],
     image: {
       src: "/images/teasers/knowledge-externalization.webp",
@@ -68,19 +58,9 @@ export const projects: ResearchProject[] = [
     roleBadges: ["Initiator", "Project Lead", "Ongoing Research"],
     statusLabel: "Ongoing research",
     paragraphs: [
-      "Agents' Last Exam is an ongoing benchmark for the end-to-end ability of foundation-model agents to create functional physical products from natural-language requirements.",
-      "It is being designed to ask whether an agent can coordinate long-horizon reasoning, task decomposition, professional tool use, cross-domain engineering, experimentation, and system integration, and then deliver a physical artifact that someone else can check.",
-      "The design target is 24 product blueprints and 48 task instances across six engineering domains: circuit design, PCB development, mechanical CAD, embedded software, simulation, hardware-in-the-loop testing, and physical system integration. The benchmark and the task set have not been released, and no model evaluation results are reported here.",
+      "An agent receives a product requirement and has to deliver a physical object that someone else can test.",
     ],
-    highlights: [
-      "From human intent to functional physical products",
-      "Independently checkable functional requirements",
-      "Physical feedback and capability composition",
-      "Can agents turn an open requirement into a working physical artifact?",
-      "Can they compose engineering work across professional domains?",
-      "Can they experiment and diagnose real-world failures?",
-      "How should physical task completion be checked independently?",
-    ],
+    highlights: ["24 blueprints", "48 tasks", "6 engineering domains", "Not released"],
     topics: ["agentic-ai", "embodied-ai"],
     workflow: [
       "Human Requirements",
@@ -89,8 +69,7 @@ export const projects: ResearchProject[] = [
       "Fabrication and Integration",
       "Independent Physical Verification",
     ],
-    footnote:
-      "This project is in progress. There is no paper, code release, dataset, or leaderboard to link yet.",
+    footnote: "Still being designed. No paper, code, dataset, or results yet.",
     emphasis: "primary",
     visibility: "public",
   },
@@ -102,15 +81,9 @@ export const projects: ResearchProject[] = [
     roleBadges: ["First Author"],
     statusLabel: "arXiv preprint",
     paragraphs: [
-      "SAMoE-VLA studies the limits of token-level mixture-of-experts routing when a model has to generate continuous driving actions. It routes experts from structured visual scene features and merges them with differentiable parameter-space fusion.",
-      "The paper examines routing granularity, cross-modal conditioning, and how a driving model behaves across different scenes. Use the numbers in the public manuscript rather than any earlier review label.",
+      "Picks driving experts from the bird’s-eye view of the scene, then blends their parameters into one continuous action.",
     ],
-    highlights: [
-      "Scene-level mixture-of-experts",
-      "BEV-conditioned routing",
-      "Differentiable parameter-space expert fusion",
-      "Continuous action generation",
-    ],
+    highlights: ["Scene-level experts", "BEV routing", "Parameter-space fusion"],
     topics: ["foundation-models", "embodied-ai"],
     image: {
       src: "/images/teasers/samoe-vla.webp",
@@ -118,8 +91,7 @@ export const projects: ResearchProject[] = [
       width: 1600,
       height: 1254,
     },
-    footnote:
-      "The linked repository currently contains the project overview and figures. It is not a full training or inference release.",
+    footnote: "The repository has the overview and figures, not a training release.",
     emphasis: "secondary",
     visibility: "public",
   },
@@ -129,16 +101,9 @@ export const projects: ResearchProject[] = [
     roleBadges: ["First Author", "Ongoing Research"],
     statusLabel: "Ongoing research",
     paragraphs: [
-      "This ongoing project studies how interaction experience becomes a reusable spatial skill. A spatial agent collects feedback and stores relational, executable skills: when to use one, what it does, and which one runs first.",
-      "Program interventions edit those parts of a skill, so task success can be separated from the stored operation, the selection decision, and the execution order. On the project figure, retaining learned skills raises direct task success from 21.00% to 53.33%. Runtime records identify the modified component in 68.92% of cases, compared with 44.59% from outcomes alone.",
+      "A skill has three editable parts: when to use it, what it does, and which skill runs first. Keeping learned skills raises direct task success from 21.00% to 53.33%.",
     ],
-    highlights: [
-      "Procedural memory",
-      "Executable relational programs",
-      "Skill induction and composition",
-      "Program-level intervention",
-      "Agent failure diagnosis",
-    ],
+    highlights: ["21.00% to 53.33% success", "68.92% vs 44.59% component ID", "When, what, which first"],
     topics: ["agentic-ai", "embodied-ai"],
     image: {
       src: "/images/teasers/spatial-agent-learning.webp",
@@ -157,16 +122,9 @@ export const projects: ResearchProject[] = [
     roleBadges: ["Co-First Author"],
     statusLabel: "arXiv preprint",
     paragraphs: [
-      "Dual-Priv Pruning is a privacy-preserving fine-tuning framework that prunes both visual tokens and gradient updates. The aim is to reduce computation and limit the utility loss that differential privacy noise causes in a multimodal model.",
-      "The method combines visual token selection, adaptive gradient updates, low-rank adaptation, and formal privacy accounting.",
+      "Drops spare visual tokens and spare gradient updates so private fine-tuning of a multimodal model uses less compute and loses less accuracy.",
     ],
-    highlights: [
-      "Differentially private post-training",
-      "Visual token pruning",
-      "Gradient-update pruning",
-      "LoRA",
-      "Rényi differential privacy accounting",
-    ],
+    highlights: ["Visual token pruning", "Gradient pruning", "LoRA", "Rényi accounting"],
     topics: ["foundation-models"],
     image: {
       src: "/images/teasers/dual-priv.webp",
@@ -184,15 +142,9 @@ export const projects: ResearchProject[] = [
     roleBadges: ["Co-Author"],
     statusLabel: "arXiv preprint",
     paragraphs: [
-      "World4Scorer scores candidate driving plans with one shared predictor. Each plan is mapped to a state, and the scores are read from that state.",
-      "Simulator outcomes supervise every candidate, including plans that were never executed. The observed future of the logged trajectory anchors the predictor, and is used only during training.",
+      "One predictor scores every candidate plan, including plans the car never drove. The logged future is used only while training.",
     ],
-    highlights: [
-      "Trajectory-conditioned predictor as the scorer",
-      "Outcome labels for every candidate",
-      "Observed-future anchor during training",
-      "Inertial re-ranking for consecutive choices",
-    ],
+    highlights: ["Score from a predicted state", "Labels for undriven plans", "Inertial re-ranking"],
     topics: ["foundation-models", "embodied-ai"],
     image: {
       src: "/images/teasers/world4scorer.webp",
@@ -210,15 +162,9 @@ export const projects: ResearchProject[] = [
     roleBadges: ["Co-Author"],
     statusLabel: "arXiv preprint",
     paragraphs: [
-      "MobileWAM connects a pretrained video world model to whole-body mobile manipulation. A lightweight action expert attends to the video backbone, and each of its feed-forward layers mixes shared, locomotion, and manipulation pathways.",
-      "Chain-of-Foresight trains the model to predict a chain of future latent chunks. That chain is used only during training. The manuscript reports a 73.0% mean success rate on ManiSkill-HAB and transfer to a real ARX Lift2 robot. Code has not been released.",
+      "A video model moves a robot’s base and arm together. Locomotion and manipulation use separate experts. Reported mean success on ManiSkill-HAB is 73.0%.",
     ],
-    highlights: [
-      "Video world model for mobile manipulation",
-      "Locomotion and manipulation experts",
-      "Chain-of-Foresight, training only",
-      "Real-robot transfer on ARX Lift2",
-    ],
+    highlights: ["Base and arm together", "73.0% ManiSkill-HAB", "ARX Lift2", "Code not released"],
     topics: ["foundation-models", "embodied-ai"],
     image: {
       src: "/images/teasers/mobilewam.webp",

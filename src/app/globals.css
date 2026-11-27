@@ -300,6 +300,20 @@ main { padding: 1.5rem 0 4rem; }
 .badges { display: flex; flex-wrap: wrap; gap: 0.35rem; }
 .project-stack { display: grid; gap: 1rem; }
 .project-index { color: var(--accent); font-family: var(--font-serif); font-size: 0.95rem; margin: 0; }
+.project-lead {
+  font-family: var(--font-serif);
+  font-size: 1.18rem;
+  line-height: 1.4;
+  color: var(--primary);
+  margin: 0.45rem 0 0.75rem;
+}
+.project-facts { margin: 0 0 0.85rem; }
+.project-facts li {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-weight: 500;
+}
 .project h3 a { color: var(--primary); text-decoration: none; }
 .project h3 a:hover { color: var(--accent); }
 .figure {
