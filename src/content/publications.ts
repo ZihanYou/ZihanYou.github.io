@@ -36,7 +36,7 @@ export const publications: Publication[] = [
     status: "peer-reviewed",
     topics: ["foundation-models"],
     summary:
-      "Takes a chosen fact out of the model weights and stores it in memory tokens, so the model can forget it and have it put back.",
+      "Post-training moves a chosen concept out of the weights and into memory tokens, so the model can forget that concept and later restore it.",
     thumbnail: {
       src: "/images/teasers/knowledge-externalization.webp",
       alt: "Framework figure from Knowledge Externalization.",
@@ -179,7 +179,7 @@ export const publications: Publication[] = [
     status: "preprint",
     topics: ["agentic-ai", "embodied-ai"],
     summary:
-      "Same start, two instructions. Across six main CARLA systems, 93.2% of successful single-instruction runs have no successful paired run.",
+      "The scene stays fixed and only the instruction changes. Across six principal CARLA systems, 93.2% of successful runs on one instruction have no successful run on the other.",
     thumbnail: {
       src: "/images/teasers/language2drive.webp",
       alt: "Language2Drive overview of matched counterfactual instructions, four instruction scopes, and separate language-control and driving-quality measurements.",
@@ -232,7 +232,7 @@ export const publications: Publication[] = [
     status: "preprint",
     topics: ["foundation-models", "embodied-ai"],
     summary:
-      "One predictor scores every candidate driving plan, including plans the car never drove. I am a co-author.",
+      "One trained predictor scores every candidate plan, including plans that were never driven. I am a co-author.",
     thumbnail: {
       src: "/images/teasers/world4scorer.webp",
       alt: "World4Scorer figure comparing outcome labels, a future-prediction world model, and outcome-grounded scoring of every candidate plan.",
@@ -287,7 +287,7 @@ export const publications: Publication[] = [
     status: "preprint",
     topics: ["foundation-models", "embodied-ai"],
     summary:
-      "A video model moves a robot’s base and arm together. Reported mean success on ManiSkill-HAB is 73.0%. Code is not released.",
+      "Post-training adapts a pretrained video model to move a mobile robot’s base and arm together. Mean success on ManiSkill-HAB is 73.0%. Code is not released.",
     thumbnail: {
       src: "/images/teasers/mobilewam.webp",
       alt: "MobileWAM overview of real-robot tasks, the mixture-of-transformers model, Chain-of-Foresight, and reported benchmark results.",
@@ -325,7 +325,7 @@ export const publications: Publication[] = [
     status: "preprint",
     topics: ["foundation-models", "embodied-ai"],
     summary:
-      "Picks driving experts from the bird’s-eye view of the scene, then blends them into one continuous action. The repository is not a full training implementation.",
+      "Token-level expert routing from large language models is replaced, at training time, by routing from the bird’s-eye-view scene. The repository is not a full training implementation.",
     thumbnail: {
       src: "/images/teasers/samoe-vla.webp",
       alt: "Framework figure from the SAMoE-VLA paper.",
@@ -371,7 +371,7 @@ export const publications: Publication[] = [
     status: "preprint",
     topics: ["foundation-models"],
     summary:
-      "Drops spare visual tokens and gradient updates so private fine-tuning of a multimodal model costs less and loses less accuracy.",
+      "Private post-training prunes redundant visual tokens and gradient coordinates before noise is added, then updates the rest with LoRA.",
     thumbnail: {
       src: "/images/teasers/dual-priv.webp",
       alt: "Figure from the Dual-Priv Pruning paper.",
