@@ -80,9 +80,14 @@ function ProjectCard({
             ))}
           </ul>
           <p className="meta">{project.statusLabel}</p>
-          {paragraphs.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
+          <p className="project-lead">{paragraphs[0]}</p>
+          {project.highlights.length > 0 ? (
+            <ul className="tags project-facts">
+              {project.highlights.slice(0, full ? project.highlights.length : 4).map((highlight) => (
+                <li key={highlight}>{highlight}</li>
+              ))}
+            </ul>
+          ) : null}
           {full && project.workflow ? (
             <ol className="workflow">
               {project.workflow.map((step, stepIndex) => (
@@ -92,13 +97,6 @@ function ProjectCard({
                 </li>
               ))}
             </ol>
-          ) : null}
-          {full && project.highlights.length > 0 ? (
-            <ul className="highlights">
-              {project.highlights.map((highlight) => (
-                <li key={highlight}>{highlight}</li>
-              ))}
-            </ul>
           ) : null}
           <ResourceLinks links={links} />
           {!full ? (

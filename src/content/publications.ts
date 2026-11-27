@@ -36,7 +36,7 @@ export const publications: Publication[] = [
     status: "peer-reviewed",
     topics: ["foundation-models"],
     summary:
-      "Knowledge Externalization moves targeted parametric knowledge into modular memory tokens so a multimodal model can forget, recover, and compose that knowledge. Dual-Stream Memory fine-tuning and MEXBench study this post-training setting, including gradient interference when several concepts are externalized together.",
+      "Takes a chosen fact out of the model weights and stores it in memory tokens, so the model can forget it and have it put back.",
     thumbnail: {
       src: "/images/teasers/knowledge-externalization.webp",
       alt: "Framework figure from Knowledge Externalization.",
@@ -77,7 +77,7 @@ export const publications: Publication[] = [
     status: "peer-reviewed",
     topics: ["embodied-ai"],
     summary:
-      "MambaBEV is a BEV 3D detector with a Mamba2 temporal fusion module for global context. On nuScenes, the paper reports 51.7% NDS and 42.7% mAP for MambaBEV-base.",
+      "A bird’s-eye-view 3D detector that uses Mamba2 to fuse frames. MambaBEV-base reports 51.7% NDS and 42.7% mAP on nuScenes.",
     thumbnail: {
       src: "/images/teasers/mambabev.webp",
       alt: "Figure from the MambaBEV paper.",
@@ -117,7 +117,7 @@ export const publications: Publication[] = [
     status: "peer-reviewed",
     topics: ["embodied-ai"],
     summary:
-      "This paper studies a hybrid guided variational autoencoder for visual place recognition. The authors release the code and the Aachen-Indoor-VPR event and RGB dataset with the paper.",
+      "A compact variational autoencoder for visual place recognition, with the Aachen-Indoor-VPR event and RGB dataset.",
     thumbnail: {
       src: "/images/teasers/hybrid-vae.webp",
       alt: "Figure from Hybrid Guided Variational Autoencoder for Visual Place Recognition.",
@@ -179,7 +179,7 @@ export const publications: Publication[] = [
     status: "preprint",
     topics: ["agentic-ai", "embodied-ai"],
     summary:
-      "Language2Drive tests whether a natural-language instruction changes what a driving vision-language-action model does. Its paired counterfactual unit keeps the scene fixed and changes only the instruction. Across the six principal CARLA systems, 93.2% of successful individual instruction executions have no successful counterpart under the alternative feasible instruction.",
+      "Same start, two instructions. Across six main CARLA systems, 93.2% of successful single-instruction runs have no successful paired run.",
     thumbnail: {
       src: "/images/teasers/language2drive.webp",
       alt: "Language2Drive overview of matched counterfactual instructions, four instruction scopes, and separate language-control and driving-quality measurements.",
@@ -232,7 +232,7 @@ export const publications: Publication[] = [
     status: "preprint",
     topics: ["foundation-models", "embodied-ai"],
     summary:
-      "World4Scorer builds a driving scorer as a trajectory-conditioned predictor. Simulator outcomes supervise every candidate plan, and the observed future of the executed trajectory anchors the shared predictor during training. I am a co-author.",
+      "One predictor scores every candidate driving plan, including plans the car never drove. I am a co-author.",
     thumbnail: {
       src: "/images/teasers/world4scorer.webp",
       alt: "World4Scorer figure comparing outcome labels, a future-prediction world model, and outcome-grounded scoring of every candidate plan.",
@@ -287,7 +287,7 @@ export const publications: Publication[] = [
     status: "preprint",
     topics: ["foundation-models", "embodied-ai"],
     summary:
-      "MobileWAM adapts a video world-action model to mobile manipulation. The action expert mixes shared, locomotion, and manipulation pathways, and Chain-of-Foresight adds training-only future-latent supervision. The manuscript reports a 73.0% mean success rate on ManiSkill-HAB and transfer to a real ARX Lift2 robot. Code has not been released.",
+      "A video model moves a robot’s base and arm together. Reported mean success on ManiSkill-HAB is 73.0%. Code is not released.",
     thumbnail: {
       src: "/images/teasers/mobilewam.webp",
       alt: "MobileWAM overview of real-robot tasks, the mixture-of-transformers model, Chain-of-Foresight, and reported benchmark results.",
@@ -325,7 +325,7 @@ export const publications: Publication[] = [
     status: "preprint",
     topics: ["foundation-models", "embodied-ai"],
     summary:
-      "SAMoE-VLA studies scene-level mixture-of-experts routing for continuous driving actions, using bird's-eye-view features rather than token-level expert selection. The public repository currently contains the project overview and figures, not a full training implementation.",
+      "Picks driving experts from the bird’s-eye view of the scene, then blends them into one continuous action. The repository is not a full training implementation.",
     thumbnail: {
       src: "/images/teasers/samoe-vla.webp",
       alt: "Framework figure from the SAMoE-VLA paper.",
@@ -371,7 +371,7 @@ export const publications: Publication[] = [
     status: "preprint",
     topics: ["foundation-models"],
     summary:
-      "Dual-Priv Pruning combines visual-token pruning and gradient-update pruning for differentially private fine-tuning of multimodal large language models, together with low-rank adaptation and Rényi differential privacy accounting.",
+      "Drops spare visual tokens and gradient updates so private fine-tuning of a multimodal model costs less and loses less accuracy.",
     thumbnail: {
       src: "/images/teasers/dual-priv.webp",
       alt: "Figure from the Dual-Priv Pruning paper.",
@@ -417,7 +417,7 @@ export const publications: Publication[] = [
     status: "preprint",
     topics: ["foundation-models", "embodied-ai"],
     summary:
-      "SparseOccVLA connects semantic occupancy and vision-language models through sparse queries for 4D scene understanding and planning. I am a co-author on the paper.",
+      "Uses sparse occupancy queries to connect a vision-language model with 4D scene understanding and planning. I am a co-author.",
     thumbnail: {
       src: "/images/teasers/sparseoccvla.webp",
       alt: "Figure from the SparseOccVLA paper.",
