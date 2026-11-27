@@ -10,7 +10,8 @@ export const projects: ResearchProject[] = [
     roleBadges: ["First Author", "Project Lead"],
     statusLabel: "Released benchmark · arXiv preprint",
     paragraphs: [
-      "Same start, two instructions. Across six main CARLA systems, 93.2% of successful single-instruction runs have no successful run for the other feasible instruction.",
+      "The scene stays fixed and only the instruction changes. Across six principal CARLA systems, 93.2% of successful runs on one instruction have no successful run on the other feasible instruction.",
+      "A paired counterfactual unit is the comparison: two feasible requests, one initial state, independent model memory. The reported comparison is 64 units and 384 core rollouts per system.",
     ],
     highlights: [
       "64 PCUs, 384 rollouts per system",
@@ -38,9 +39,10 @@ export const projects: ResearchProject[] = [
     roleBadges: ["Co-First Author"],
     statusLabel: "ICLR 2026",
     paragraphs: [
-      "Takes a chosen fact out of the model weights and stores it in memory tokens, so the model can forget it and have it put back.",
+      "Post-training lifts a chosen concept out of the weights and into memory tokens, so a later update can make the model forget that concept and then restore it.",
+      "Dual-Stream Memory fine-tuning trains forgetting, recovery, and retention of general ability in one pass. MEXBench checks whether several concepts stay separate instead of interfering during that post-training.",
     ],
-    highlights: ["Memory tokens", "Dual-Stream fine-tuning", "Gradient interference", "MEXBench"],
+    highlights: ["Post-training", "Memory tokens", "Dual-Stream fine-tuning", "MEXBench"],
     topics: ["foundation-models"],
     image: {
       src: "/images/teasers/knowledge-externalization.webp",
@@ -58,7 +60,8 @@ export const projects: ResearchProject[] = [
     roleBadges: ["Initiator", "Project Lead", "Ongoing Research"],
     statusLabel: "Ongoing research",
     paragraphs: [
-      "An agent receives a product requirement and has to deliver a physical object that someone else can test.",
+      "The agent receives a product requirement in text and must return a physical object that an independent functional test can pass.",
+      "The design target is 24 blueprints and 48 tasks across circuits, PCBs, mechanical CAD, embedded software, simulation, and integration. No paper, code, or measured results are released.",
     ],
     highlights: ["24 blueprints", "48 tasks", "6 engineering domains", "Not released"],
     topics: ["agentic-ai", "embodied-ai"],
@@ -81,7 +84,8 @@ export const projects: ResearchProject[] = [
     roleBadges: ["First Author"],
     statusLabel: "arXiv preprint",
     paragraphs: [
-      "Picks driving experts from the bird’s-eye view of the scene, then blends their parameters into one continuous action.",
+      "Post-training selects driving experts from the bird’s-eye-view scene and merges their parameters into one action, instead of letting each token pick an expert.",
+      "Token-level routing carried over from large language models does not stay stable for continuous driving actions.",
     ],
     highlights: ["Scene-level experts", "BEV routing", "Parameter-space fusion"],
     topics: ["foundation-models", "embodied-ai"],
@@ -101,9 +105,10 @@ export const projects: ResearchProject[] = [
     roleBadges: ["First Author", "Ongoing Research"],
     statusLabel: "Ongoing research",
     paragraphs: [
-      "A skill has three editable parts: when to use it, what it does, and which skill runs first. Keeping learned skills raises direct task success from 21.00% to 53.33%.",
+      "Each skill is an executable program with a guard, a body, and a priority. Editing one of those parts shows what a success score was actually measuring.",
+      "Keeping the learned skills raises direct task success from 21.00% to 53.33%. Runtime records name the edited part in 68.92% of cases, against 44.59% when only the final outcome is used.",
     ],
-    highlights: ["21.00% to 53.33% success", "68.92% vs 44.59% component ID", "When, what, which first"],
+    highlights: ["Guard, body, priority", "21.00% to 53.33%", "68.92% vs 44.59%"],
     topics: ["agentic-ai", "embodied-ai"],
     image: {
       src: "/images/teasers/spatial-agent-learning.webp",
@@ -122,9 +127,10 @@ export const projects: ResearchProject[] = [
     roleBadges: ["Co-First Author"],
     statusLabel: "arXiv preprint",
     paragraphs: [
-      "Drops spare visual tokens and spare gradient updates so private fine-tuning of a multimodal model uses less compute and loses less accuracy.",
+      "Private post-training first prunes redundant visual tokens and gradient coordinates, then adds noise only to the LoRA update that remains.",
+      "Without that pruning, the privacy noise grows with every visual token and every updated weight. Rényi differential privacy accounts for the noise that is still applied.",
     ],
-    highlights: ["Visual token pruning", "Gradient pruning", "LoRA", "Rényi accounting"],
+    highlights: ["Post-training", "Visual token pruning", "Gradient pruning", "LoRA"],
     topics: ["foundation-models"],
     image: {
       src: "/images/teasers/dual-priv.webp",
@@ -142,7 +148,8 @@ export const projects: ResearchProject[] = [
     roleBadges: ["Co-Author"],
     statusLabel: "arXiv preprint",
     paragraphs: [
-      "One predictor scores every candidate plan, including plans the car never drove. The logged future is used only while training.",
+      "The driving log records only the trajectory that was executed, but the planner still has to score the alternatives.",
+      "One predictor assigns every candidate a latent state and reads the score from that state. Simulator outcomes label the undriven plans; the logged future is used only to anchor training.",
     ],
     highlights: ["Score from a predicted state", "Labels for undriven plans", "Inertial re-ranking"],
     topics: ["foundation-models", "embodied-ai"],
@@ -162,9 +169,10 @@ export const projects: ResearchProject[] = [
     roleBadges: ["Co-Author"],
     statusLabel: "arXiv preprint",
     paragraphs: [
-      "A video model moves a robot’s base and arm together. Locomotion and manipulation use separate experts. Reported mean success on ManiSkill-HAB is 73.0%.",
+      "Post-training adapts a pretrained video model so it can move a mobile robot’s base and arm in one policy.",
+      "Each action layer is trained as locomotion, manipulation, and shared experts. Chain-of-Foresight supplies future-latent targets during training and is removed at inference. Mean success on ManiSkill-HAB is 73.0%.",
     ],
-    highlights: ["Base and arm together", "73.0% ManiSkill-HAB", "ARX Lift2", "Code not released"],
+    highlights: ["Post-training a video model", "Locomotion and manipulation experts", "73.0% ManiSkill-HAB", "Code not released"],
     topics: ["foundation-models", "embodied-ai"],
     image: {
       src: "/images/teasers/mobilewam.webp",
