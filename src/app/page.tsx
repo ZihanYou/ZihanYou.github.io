@@ -86,6 +86,38 @@ export default function HomePage() {
           <ProjectList projects={projects} publications={publications} variant="home" />
         </section>
 
+        <section className="section" id="papers">
+          <h2>Publications</h2>
+          <p>
+            Each paper is shown with its figure and a short account of the work.{" "}
+            <Link href="/publications/">Open the searchable list</Link>
+          </p>
+          <div className="paper-grid">
+            {publications.map((paper) => (
+              <article key={paper.id} className="paper-tile">
+                {paper.thumbnail ? (
+                  <img
+                    className="figure"
+                    src={paper.thumbnail.src}
+                    alt={paper.thumbnail.alt}
+                    width={paper.thumbnail.width}
+                    height={paper.thumbnail.height}
+                  />
+                ) : null}
+                <div>
+                  <p className="meta">
+                    {paper.venue} {paper.year}
+                  </p>
+                  <h3>
+                    <Link href={`/publications/#${paper.id}`}>{paper.title}</Link>
+                  </h3>
+                  <p>{paper.summary}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section className="section" id="news">
           <h2>News</h2>
           <ul className="news-list">
