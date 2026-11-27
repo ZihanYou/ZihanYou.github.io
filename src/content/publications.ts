@@ -325,7 +325,7 @@ export const publications: Publication[] = [
     status: "preprint",
     topics: ["foundation-models", "embodied-ai"],
     summary:
-      "Token-level expert routing from large language models is replaced, at training time, by routing from the bird’s-eye-view scene. The repository is not a full training implementation.",
+      "Post-training selects driving experts from the bird’s-eye-view scene and merges them into one action, instead of letting each token pick an expert. The repository is not a full training implementation.",
     thumbnail: {
       src: "/images/teasers/samoe-vla.webp",
       alt: "Framework figure from the SAMoE-VLA paper.",
