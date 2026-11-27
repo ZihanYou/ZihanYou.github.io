@@ -53,9 +53,10 @@ function ProjectCard({
 }) {
   const links = projectLinks(project, publications);
   const paragraphs = full ? project.paragraphs : project.paragraphs.slice(0, 1);
+  const wide = Boolean(project.image && project.image.width / project.image.height > 1.45);
   return (
-    <article className="project" id={project.id}>
-      <div className={project.image && full ? "project-primary" : undefined}>
+    <article className={wide ? "project project-span" : "project"} id={project.id}>
+      <div className={project.image && full && !wide ? "project-primary" : undefined}>
         {project.image ? (
           <img
             className="figure"

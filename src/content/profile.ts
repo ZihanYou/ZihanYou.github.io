@@ -36,7 +36,7 @@ export const profile: Profile = {
     "My long-term goal is to develop intelligent systems that can autonomously understand, reason about, interact with, and create within the physical world.",
   ],
   email: "zihanyou@seu.edu.cn",
-  avatar: "/bio.jpg",
+  avatar: "/images/avatar.webp",
   siteUrl: "https://zihanyou.github.io",
   lastUpdated: "November 2026",
   cvPdf: "/Zihan_You_Academic_CV.pdf",
