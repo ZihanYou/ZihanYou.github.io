@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://zihanyou.github.io
+Sitemap: https://zihanyou.github.io/sitemap.xml

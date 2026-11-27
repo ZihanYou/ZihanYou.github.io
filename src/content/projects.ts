@@ -1,0 +1,174 @@
+import "server-only";
+import type { ResearchProject } from "./types";
+
+export const projects: ResearchProject[] = [
+  {
+    id: "language2drive",
+    publicationId: "language2drive",
+    title:
+      "Language2Drive: Do Vision-Language-Action Models Really Follow the Instructions in Autonomous Driving?",
+    roleBadges: ["First Author", "Project Lead"],
+    statusLabel: "Released benchmark · arXiv preprint",
+    paragraphs: [
+      "Language2Drive is a benchmark for whether a natural-language instruction causally determines the behavior of a driving vision-language-action model. Its paired counterfactual unit (PCU) holds the initial driving scene fixed and changes only the instruction, so a successful drive can be distinguished from actually following both feasible requests.",
+      "Across the six principal CARLA systems, 93.2% of successful individual instruction executions lack a successful counterpart under an alternative feasible instruction in the same scene. That figure is the share of successful one-sided executions, not an overall failure rate of the models.",
+    ],
+    highlights: [
+      "Six purpose-built CARLA maps",
+      "Four instruction-following scopes",
+      "Paired counterfactual evaluation",
+      "Closed-loop and open-loop tracks across CARLA, reconstructed scenes, and recorded driving",
+      "Reported CARLA comparison: 64 PCUs and 384 core rollouts per system",
+      "Authors affiliated with 19 institutions",
+    ],
+    topics: ["agentic-ai", "embodied-ai"],
+    image: {
+      src: "/images/teasers/language2drive.webp",
+      alt: "Language2Drive overview of matched counterfactual instructions, four instruction scopes, and separate language-control and driving-quality measurements.",
+      width: 1600,
+      height: 849,
+    },
+    footnote:
+      "The reported CARLA comparison is the base single-seed cohort. A larger source inventory spans 128 PCUs and 2,304 potential core executions across three seeds; the paper does not present that inventory as the completed comparison. The code, project page, and current Hugging Face benchmark assets are public. The official versioned dataset, model, and checkpoint release is still marked as in progress.",
+    emphasis: "primary",
+    visibility: "public",
+  },
+  {
+    id: "knowledge-externalization",
+    publicationId: "knowledge-externalization",
+    title:
+      "Knowledge Externalization: Reversible Unlearning and Modular Retrieval in Multimodal Large Language Models",
+    roleBadges: ["Co-First Author"],
+    statusLabel: "ICLR 2026",
+    paragraphs: [
+      "Knowledge Externalization transfers targeted parametric knowledge into modular, learnable memory tokens. The same tokens support reversible unlearning, controllable recovery, and compositional retrieval.",
+      "Dual-Stream Memory fine-tuning optimizes forgetting, recovery, and retention of general capability together. The work also studies gradient interference when several concepts are externalized, and introduces MEXBench to evaluate modular knowledge externalization.",
+    ],
+    highlights: [
+      "Reversible unlearning and modular knowledge recovery",
+      "Multimodal post-training",
+      "Knowledge disentanglement and compositional memory",
+      "Gradient interference mitigation",
+      "MEXBench",
+    ],
+    topics: ["foundation-models"],
+    image: {
+      src: "/images/teasers/knowledge-externalization.webp",
+      alt: "Framework figure from Knowledge Externalization.",
+      width: 1600,
+      height: 906,
+    },
+    emphasis: "primary",
+    visibility: "public",
+  },
+  {
+    id: "agents-last-exam",
+    title: "Agents' Last Exam: A Benchmark for Real-World Product Creation",
+    subtitle: "Also called the Idea2Product Benchmark.",
+    roleBadges: ["Initiator", "Project Lead", "Ongoing Research"],
+    statusLabel: "Ongoing research",
+    paragraphs: [
+      "Agents' Last Exam is an ongoing benchmark for the end-to-end ability of foundation-model agents to create functional physical products from natural-language requirements.",
+      "It is being designed to ask whether an agent can coordinate long-horizon reasoning, task decomposition, professional tool use, cross-domain engineering, experimentation, and system integration, and then deliver a physical artifact that someone else can check.",
+      "The design target is 24 product blueprints and 48 task instances across six engineering domains: circuit design, PCB development, mechanical CAD, embedded software, simulation, hardware-in-the-loop testing, and physical system integration. The benchmark and the task set have not been released, and no model evaluation results are reported here.",
+    ],
+    highlights: [
+      "From human intent to functional physical products",
+      "Independently checkable functional requirements",
+      "Physical feedback and capability composition",
+      "Can agents turn an open requirement into a working physical artifact?",
+      "Can they compose engineering work across professional domains?",
+      "Can they experiment and diagnose real-world failures?",
+      "How should physical task completion be checked independently?",
+    ],
+    topics: ["agentic-ai", "embodied-ai"],
+    workflow: [
+      "Human Requirements",
+      "Agent Planning and Tool Use",
+      "CAD / EDA / Embedded Development",
+      "Fabrication and Integration",
+      "Independent Physical Verification",
+    ],
+    footnote:
+      "This project is in progress. There is no paper, code release, dataset, or leaderboard to link yet.",
+    emphasis: "primary",
+    visibility: "public",
+  },
+  {
+    id: "samoe-vla",
+    publicationId: "samoe-vla",
+    title:
+      "SAMoE-VLA: A Scene Adaptive Mixture-of-Experts Vision-Language-Action Model for Autonomous Driving",
+    roleBadges: ["First Author"],
+    statusLabel: "arXiv preprint",
+    paragraphs: [
+      "SAMoE-VLA studies the limits of token-level mixture-of-experts routing when a model has to generate continuous driving actions. It routes experts from structured visual scene features and merges them with differentiable parameter-space fusion.",
+      "The paper examines routing granularity, cross-modal conditioning, and how a driving model behaves across different scenes. Use the numbers in the public manuscript rather than any earlier review label.",
+    ],
+    highlights: [
+      "Scene-level mixture-of-experts",
+      "BEV-conditioned routing",
+      "Differentiable parameter-space expert fusion",
+      "Continuous action generation",
+    ],
+    topics: ["foundation-models", "embodied-ai"],
+    image: {
+      src: "/images/teasers/samoe-vla.webp",
+      alt: "Framework figure from the SAMoE-VLA paper.",
+      width: 1600,
+      height: 1254,
+    },
+    footnote:
+      "The linked repository currently contains the project overview and figures. It is not a full training or inference release.",
+    emphasis: "secondary",
+    visibility: "public",
+  },
+  {
+    id: "spatial-agent-learning",
+    title: "Spatial Agent Learning",
+    roleBadges: ["First Author", "Ongoing Research"],
+    statusLabel: "Ongoing research",
+    paragraphs: [
+      "This ongoing project studies how a spatial agent can turn interaction experience into reusable, executable, and composable relational programs.",
+      "The questions are procedural skill memory, conditional skill routing, cross-scene generalization, and program-level interventions that make an agent's failures inspectable. No manuscript or experimental figures are posted here.",
+    ],
+    highlights: [
+      "Procedural memory",
+      "Executable relational programs",
+      "Skill induction and composition",
+      "Program-level intervention",
+      "Agent failure diagnosis",
+    ],
+    topics: ["agentic-ai", "embodied-ai"],
+    emphasis: "secondary",
+    visibility: "public",
+  },
+  {
+    id: "dual-priv",
+    publicationId: "dual-priv",
+    title:
+      "Dual-Priv Pruning : Efficient Differential Private Fine-Tuning in Multimodal Large Language Models",
+    roleBadges: ["Co-First Author"],
+    statusLabel: "arXiv preprint",
+    paragraphs: [
+      "Dual-Priv Pruning is a privacy-preserving fine-tuning framework that prunes both visual tokens and gradient updates. The aim is to reduce computation and limit the utility loss that differential privacy noise causes in a multimodal model.",
+      "The method combines visual token selection, adaptive gradient updates, low-rank adaptation, and formal privacy accounting.",
+    ],
+    highlights: [
+      "Differentially private post-training",
+      "Visual token pruning",
+      "Gradient-update pruning",
+      "LoRA",
+      "Rényi differential privacy accounting",
+    ],
+    topics: ["foundation-models"],
+    image: {
+      src: "/images/teasers/dual-priv.webp",
+      alt: "Figure from the Dual-Priv Pruning paper.",
+      width: 1600,
+      height: 1282,
+    },
+    emphasis: "secondary",
+    visibility: "public",
+  },
+];
