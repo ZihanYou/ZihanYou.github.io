@@ -1,5 +1,6 @@
 import { AwardsList } from "@/components/AwardsList";
 import { ExperienceList } from "@/components/ExperienceList";
+import { ProfileLinks } from "@/components/ProfileLinks";
 import { ProjectList } from "@/components/ProjectList";
 import { awards, directions, education, experience, news, profile, projects, publications, socialLinks } from "@/lib/content";
 import Link from "next/link";
@@ -23,29 +24,13 @@ export default function HomePage() {
         </h1>
         <p className="profile-title">{profile.title}</p>
         <p className="profile-meta">{profile.affiliation}</p>
-        <p className="profile-meta">{profile.degree}</p>
-        <p className="profile-meta">{profile.graduation}</p>
-        <p className="tagline">{profile.tagline}</p>
-        <p>
-          <a className="email-link" href={`mailto:${profile.email}`}>
-            {profile.email}
-          </a>
+        <p className="profile-meta">
+          {profile.degree}
+          <br />
+          {profile.graduation}
         </p>
-        <ul className="social-list">
-          {socialLinks
-            .filter((link) => link.label !== "Email")
-            .map((link) => (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                >
-                  {link.label}
-                  {link.external ? <span className="sr-only"> (opens in a new tab)</span> : null}
-                </a>
-              </li>
-            ))}
-        </ul>
+        <p className="tagline">{profile.tagline}</p>
+        <ProfileLinks links={socialLinks} email={profile.email} />
       </aside>
       <div>
         <p className="lede">{profile.hero}</p>
