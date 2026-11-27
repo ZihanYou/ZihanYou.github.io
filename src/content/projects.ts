@@ -129,8 +129,8 @@ export const projects: ResearchProject[] = [
     roleBadges: ["First Author", "Ongoing Research"],
     statusLabel: "Ongoing research",
     paragraphs: [
-      "This ongoing project studies how a spatial agent can turn interaction experience into reusable, executable, and composable relational programs.",
-      "The questions are procedural skill memory, conditional skill routing, cross-scene generalization, and program-level interventions that make an agent's failures inspectable. No manuscript or experimental figures are posted here.",
+      "This ongoing project studies how interaction experience becomes a reusable spatial skill. A spatial agent collects feedback and stores relational, executable skills: when to use one, what it does, and which one runs first.",
+      "Program interventions edit those parts of a skill, so task success can be separated from the stored operation, the selection decision, and the execution order. On the project figure, retaining learned skills raises direct task success from 21.00% to 53.33%. Runtime records identify the modified component in 68.92% of cases, compared with 44.59% from outcomes alone.",
     ],
     highlights: [
       "Procedural memory",
@@ -140,6 +140,12 @@ export const projects: ResearchProject[] = [
       "Agent failure diagnosis",
     ],
     topics: ["agentic-ai", "embodied-ai"],
+    image: {
+      src: "/images/teasers/spatial-agent-learning.webp",
+      alt: "Diagram of experience-driven spatial skill learning: a spatial agent builds a skill library, program interventions edit a skill, and diagnosis compares retention, component attribution, and execution order.",
+      width: 1800,
+      height: 1202,
+    },
     emphasis: "secondary",
     visibility: "public",
   },
