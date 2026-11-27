@@ -1,0 +1,13 @@
+{
+  "name": "ZihanYou.github.io",
+  "terminals": [
+    {
+      "name": "static-server",
+      "command": "python3 -m http.server 8000",
+      "description": "Serves the exported static site from the repository root (mirroring GitHub Pages) at http://localhost:8000."
+    }
+  ],
+  "ports": [
+    { "name": "web", "port": 8000 }
+  ]
+}
